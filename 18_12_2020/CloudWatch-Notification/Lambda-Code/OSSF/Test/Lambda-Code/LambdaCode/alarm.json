@@ -1,0 +1,69 @@
+{
+    "eventId": "",
+    "eventTime": "",
+    "eventType": "",
+    "source": {
+        "name": "STACKS"
+    },
+    "event": {
+        "alarm": {
+            "id": "Alarm_id",
+            "alarmType": "Alram_type",
+            "perceivedSeverity": "",
+            "probableCause": "Cause",
+            "specificProblem": "Problem",
+            "alarmedObjectType": "Not Using",
+            "alarmedObject": {
+                "id": "",
+                "href": "http://<<Url for the alarmedObject>>/123456"
+            },
+            "SourceSystemId": "",
+            "alarmDetails": "Alarm_Description",
+            "alarmState": "",
+            "alarmRaisedTime": "Timestamp",
+            "alarmChangedTime": "Change_timestamp",
+            "alarmClearedTime": "Clear_timestamp",
+            "proposedRepairActions": "Check CPU Load",
+            "alarmReportingTime": "Alarm_Timestamp",
+            "plannedOutageIndication": "",
+            "serviceAffecting": true,
+            "affectedService": [
+                {
+                    "id": "",
+                    "href": "<< Url for the affected service >>"
+                }
+            ],
+            "isRootCause": "",
+            "correlatedAlarm": [
+                {
+                    "id": "",
+                    "href": ""
+                }
+            ],
+            "parentAlarm": [
+                {
+                    "id": "",
+                    "href": ""
+                }
+            ],
+            "crossedThresholdInformation": {
+                "thresholdId": "",
+                "thresholdRef": "",
+                "indicatorName": "",
+                "observedValue": "",
+                "indicatorUnit": "",
+                "granularity": "",
+                "direction": "",
+                "thresholdCrossingDescription": ""
+            },
+            "comments": [
+                {
+                    "userId": "",
+                    "time": "",
+                    "systemId": "",
+                    "comment": ""
+                }
+            ]
+        }
+    }
+}

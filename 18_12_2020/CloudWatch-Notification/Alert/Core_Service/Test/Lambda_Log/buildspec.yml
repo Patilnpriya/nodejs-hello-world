@@ -1,0 +1,16 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - cd CloudWatch-Notification/Core_Service/Test/Lambda-Code/
+      - cat samTemplate.yaml
+      - sed -i "s#'lambda-role-arn'#'${role}'#g" samTemplate.yaml
+      - sed -i "s#'lambda-layer'#'${lambda-layer}'#g" samTemplate.yaml
+      - cat samTemplate.yaml
+      - aws cloudformation package --template-file samTemplate.yaml --s3-bucket ${artifact-bucket} --output-template-file outputSamTemplate.yaml
+artifacts:
+  type: zip
+  files:
+    - samTemplate.yaml
+    - outputSamTemplate.yaml
+  base-directory: 'CloudWatch-Notification/Core_Service/Test/Lambda-Code/'
